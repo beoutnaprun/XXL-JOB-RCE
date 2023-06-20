@@ -1,7 +1,23 @@
 import re,argparse
 import time
 import requests,urllib3,base64
+name = '''
 
+    |   |       |   |                              __________
+    |   |       |   |                            /   -----   \          
+    |   |_______|   |  _____           ______   /   /     \___\     _____     _______
+    |    _______    |/  ___  \  \  /  /  ___  \ |   |             /      \  /   ___  \ 
+    |   |       |   |  |___\  \  \/  /  /   \  \|   |     ______ /   ___  \/   /   \  \ 
+    |   |       |   |  _____   |    |  |     |  \   \    |___   |   |___|  |  |     |  |
+    |   |       |   |  \___/  /  /\  \  \___/ /\ \   \______/  / \        /|  |     |  |
+    |___|       |___|\_______/  /  \  \______/  \_\___________/   \______/ |  |     |  |
+
+    Hello, welcome to use the DirScan tool of HexaGon Laboratory
+    The author of this article China Hacker X
+
+    Please enter the - h parameter for help
+
+'''
 parser = argparse.ArgumentParser(description='This is the help!')
 parser.add_argument('-t', '--target', help='\t要检测的url', default='')
 parser.add_argument('-l', '--local', help='\t自己监听的服务器IP:port', default='')
@@ -115,6 +131,7 @@ def shanchuzhixingqi(url,lists):
 #删除管理员账户 （询问是否删除w）
 
 if __name__ == '__main__':
+    print(name)
     list = []
     if args.local == "":
         print("="*80)
